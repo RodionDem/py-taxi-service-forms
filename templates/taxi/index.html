@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Welcome to Taxi Service</h1>
+  <h1>Welcome to Taxi Service</h1>
 
-<p>Number of drivers: {{ num_drivers }}</p>
-<p>Number of cars: {{ num_cars }}</p>
-<p>Number of manufacturers: {{ num_manufacturers }}</p>
+  <p>You have visited this page
+    {{ num_visits }} time{{ num_visits|pluralize }}.
+  </p>
 
-<p>You have visited this page {{ num_visits }} times.</p>
+  <p>Number of drivers: {{ num_drivers }}</p>
+  <p>Number of cars: {{ num_cars }}</p>
+  <p>Number of manufacturers: {{ num_manufacturers }}</p>
 {% endblock %}
+
